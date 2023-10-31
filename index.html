@@ -1,51 +1,67 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <title>James Foley</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <style>
-      html, body {
+      html,
+      body {
         margin: 0;
         padding: 0;
       }
 
       body {
-        width: 100vw;
-        height: 100vh;
+        align-items: center;
+        justify-content: center;
 
         display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 100vw;
+        height: 100vh;
 
         font-family: 'Space Mono', monospace;
       }
 
+      a {
+        color: white;
+      }
+
       .business-card {
         width: 470px;
-
         padding: 30px;
 
         background-color: black;
-
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        color: white;
-
         border-radius: 3px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+        color: white;
       }
 
       .name {
-        margin-bottom: 10px;
+        margin: 0 0 10px 0;
+        padding: 0;
 
         font-size: 28px;
         font-weight: bold;
       }
 
-      .name span {
+      .location {
         font-size: 16px;
         font-weight: normal;
       }
@@ -54,21 +70,41 @@
         font-size: 16px;
         line-height: 1.5;
       }
-
-      a {
-        color: white;
-      }
     </style>
   </head>
   <body>
     <div class="business-card">
-      <div class="name">James Foley <span>England, UK.</span></div>
-      <div class="description">
-        I'm a full stack web developer with over 15 years of experience using PHP, Python, Ruby, and JavaScript, with my current focus being Shopify themes and apps. I also have experience outside of web development, including Linux devops, desktop and mobile applications, and game development.
-      </div>
+      <h1 class="name">
+        James Foley
+        <span class="location">England, UK.</span>
+      </h1>
+      <p class="description">
+        I'm a full stack web developer with over 15 years of experience using
+        PHP, Python, Ruby, and JavaScript, with various frameworks such as
+        <a target="_blank" href="https://www.djangoproject.com/">Django</a>,
+        <a target="_blank" href="https://rubyonrails.org/">Ruby on Rails</a>,
+        and <a target="_blank" href="https://vuejs.org/">Vue.js</a>.
+      </p>
+      <p class="description">
+        My current role is Technical Lead at a UK based Shopify agency where I
+        work on both Shopify themes and custom apps.
+      </p>
+      <p class="description">
+        I also have experience outside of web development which includes Linux
+        devops, desktop and mobile applications, 3D visualisations, and game
+        development.
+      </p>
       <ul class="link-list">
-        <li><a href="https://github.com/jamesfoley">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/jamesrichmondfoley/">LinkedIn</a></li>
+        <li>
+          <a target="_blank" href="https://github.com/jamesfoley">GitHub</a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/jamesrichmondfoley/">
+            LinkedIn
+          </a>
+        </li>
       </ul>
     </div>
   </body>
